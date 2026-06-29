@@ -242,7 +242,6 @@
     </div>
 
     <script>
-        // Filter Projects Function
         function filterProyek(kategori) {
             const semuaProyek = document.querySelectorAll(".zha-project-card");
 
@@ -256,7 +255,6 @@
         }
 
         document.addEventListener("DOMContentLoaded", function () {
-            // Hero Section Animation
             const heroSection = document.getElementById("home");
             const observerOptions = { root: null, threshold: 0.2 };
             const observer = new IntersectionObserver(function (entries) {
@@ -267,7 +265,6 @@
             }, observerOptions);
             observer.observe(heroSection);
 
-            // Header Scroll Effect
             let terakhirScroll = 0;
             const header = document.querySelector('.zha-header');
             window.addEventListener('scroll', () => {
@@ -286,7 +283,6 @@
                 terakhirScroll = scrollSaatIni;
             });
 
-            // Contact Form Validation (Final Project Requirement)
             const form = document.querySelector('.zha-form-card form');
             form.addEventListener('submit', function (event) {
                 const oldErrors = form.querySelectorAll('.zha-error-text');
